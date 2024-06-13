@@ -81,7 +81,7 @@ textarea::placeholder {
   border: none;
   align-self: center;
   margin-top: 3%;
-  position: static;
+  position:static;
 }
 .addBtn > img {
   height: 100%;
