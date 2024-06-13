@@ -81,6 +81,11 @@ textarea::placeholder {
   border: none;
   align-self: center;
   margin-top: 3%;
+  position: static;
+}
+.addBtn > img {
+  height: 100%;
+  width: 100%;
 }
 .form-error-text {
   color: tomato;
