@@ -24,11 +24,13 @@
 }
 
 .footer>a>img{
-    width: 50%;
+    height: 10vw;
+    width: 10vw;
 }
 
 @media(min-width: 1000px){
     .footer>a>img{
+        height: 10vh;
         width: 30%;
     }
 
