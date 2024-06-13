@@ -28,6 +28,8 @@ label{
 form{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     max-width: 70%;
 }
 form > input,select,label,.a{
