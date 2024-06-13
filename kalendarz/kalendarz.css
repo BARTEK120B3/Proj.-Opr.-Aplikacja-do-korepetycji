@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 5vw;
+  width: 100%;
+  height: 100%;
+}
+body > * {
+  box-sizing: border-box;
+}
+html {
+  background-color: #fafafa;
+  width: 100vw;
+  height: 100vh;
+}
+h1,
+h2,
+li,
+th,
+td {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: weight; */
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+header {
+  /* position: sticky;
+  top: 0;
+  z-index: 100; */
+  margin-bottom: 10vh;
+}
+h1 {
+  color: #012676;
+  font-weight: 800;
+  /* position:fixed; */
+  /* top:auto;
+  z-index: 100; */
+}
+h2 {
+  color: #09090b;
+  font-weight: 500;
+  font-size: 4.5vw;
+}
+.wydarzenia {
+  width: 100%;
+  height: 20vw;
+  /* display: flex;
+  justify-content: center; */
+  margin-bottom: 28vw;
+}
+aside {
+  background-color: #f3f3f3;
+  -webkit-box-shadow: 0px 9px 3px -5px rgba(66, 68, 90, 0.56);
+  -moz-box-shadow: 0px 9px 3px -5px rgba(66, 68, 90, 0.56);
+  box-shadow: 0px 9px 3px -5px rgba(66, 68, 90, 0.56);
+  width: 90%;
+  border-radius: 2.5vw;
+  padding: 0.5vw 2vw;
+  margin: auto;
+}
+.twoje-korepetycje {
+  display: none;
+}
+.container {  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin: 2vw;
+}
+
+li::before {
+  content: "→";
+  padding-right: 4vw;
+}
+
+main {
+  width: 100%;
+  height: 90vw;
+}
+table {
+  width: 100%;
+  height: 100vw;
+  border-collapse: collapse;
+}
+th {
+  background-color: #012676;
+  width: 12%;
+  height: 16%;
+  text-align: center;
+  border: #09090b solid 0.1vw;
+  color: #d9d9d9;
+}
+td {
+  background-color: #d9d9d9;
+  width: 12%;
+  height: 16%;
+  text-align: center;
+  border: #09090b solid 0.1vw;
+  transition: 0.25s;
+}
+
+.table-left-top-corner {
+  border-top-left-radius: 2.5vw;
+  border-top: none;
+  border-left: none;
+}
+.table-right-top-corner {
+  border-top-right-radius: 2.5vw;
+  border-top: none;
+  border-right: none;
+}
+.table-left-bottom-corner {
+  border-bottom-left-radius: 2.5vw;
+  border-bottom: none;
+  border-left: none;
+}
+.table-right-bottom-corner {
+  border-bottom-right-radius: 2.5vw;
+  border-bottom: none;
+  border-right: none;
+}
+.table-top {
+  border-top: none;
+}
+.table-left {
+  border-left: none;
+}
+.table-right {
+  border-right: none;
+}
+.table-bottom {
+  border-bottom: none;
+}
+
+.previous {
+  color: #012676;
+}
+
+td:hover {
+  color: #a7b62281;
+}
+td {
+  font-weight: 600;
+}
+
+@media (min-width: 1280px) {
+  html {
+    width: 100%;
+    max-height: 100vh;
+    /* height: 100vh; */
+    padding: 0;
+    margin: 0;
+  }
+  header {
+    height: 15%;
+    margin: 0;
+    /* position: sticky; */
+  }
+  body {
+    /* padding-left: 3.5vw; */
+    /* padding: 0; */
+    margin: 0;
+    /* padding-top: 0vw; */
+    width: 100%;
+    /* margin-bottom: 0; */
+    /* padding: 0; */
+    /* height: 100%; */
+    padding: 0 4vw;
+    padding-top: 1vw;
+  }
+  h1 {
+    font-size: 4vw;
+    margin: 0;
+  }
+  .container {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 100%;
+    height: 68%;
+  }
+  h2 {
+    font-size: 1.4vw;
+    margin: 0;
+  }
+  .twoje-korepetycje {
+    display: block;
+  }
+  ul {
+    margin: 0;
+  }
+  li {
+    margin: 1.5vw;
+  }
+  aside {
+    height: 40%;
+    width: 80%;
+    margin: 0;
+  }
+  .wydarzenia {
+    width: 35%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  main {
+    width: 65%;
+    height: 100%;
+  }
+  table {
+    width: 100%;
+    height: 100%;
+  }
+  .twoje-korepetycje,
+  .nadchodzace-wydarzenia {
+    padding-top: 1vw;
+  }
+}

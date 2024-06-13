@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <link rel="stylesheet" href="korepetytorzy.css">
+    <link rel="stylesheet" href="../footer.css">
+    <link rel="shortcut icon" href="../zsti_logo.svg" type="image/x-icon">
+    <title>Korepetycje</title>
+</head>
+<body>
+    <header class="mainHeader">Korepetytorzy
+        <!-- <a href="korepetytorzyWyniki.html"><img src="img/undo.svg" alt=""></a> -->
+    </header>
+    <main class="fromMain">
+        <form action="szukanieKorepetytor">
+            <label for="nazwaU">Szukaj po nazwie użytkownika</label>
+            <input class="input-nazwa-uzytkownika" type="text">
+
+            <label for="preferencje">Szukaj po preferencjach</label>
+            <select name="przedmioty" id="przedmioty" class="korepetytorzyS">
+                <option value="0" disabled hidden selected>Przedmiot</option>
+                <optgroup label="przedmioty podstawowe">
+                    <option value="mat">matematyka</option>
+                    <option value="pol">polski</option>
+                    <option value="geo">geografia</option>
+                    <option value="chem">chemia</option>
+                    <option value="biol">biologia</option>
+                    <option value="ang">angielski</option>
+                    <option value="fiz">fizyka</option>
+                </optgroup>
+                <optgroup label="przedmioty zawodowe">
+                    <option value="a">a</option>
+                    <option value="b">b</option>
+                </optgroup>
+            </select>
+            <select name="dzial" id="dzial" class="korepetytorzyS">
+                <option value="0" disabled hidden selected>Dział</option>
+                <optgroup label="Pdzial">
+                    <option value="mat">matematyka</option>
+                    <option value="pol">polski</option>
+                    <option value="geo">geografia</option>
+                    <option value="chem">chemia</option>
+                    <option value="biol">biologia</option>
+                    <option value="ang">angielski</option>
+                    <option value="fiz">fizyka</option>
+                </optgroup>
+            </select>
+            <select name="temat" id="temat" class="korepetytorzyS">
+                <option value="0" disabled hidden selected>Temat</option>
+                <optgroup label="Dtemat">
+                    <option value="mat">matematyka</option>
+                    <option value="pol">polski</option>
+                    <option value="geo">geografia</option>
+                    <option value="chem">chemia</option>
+                    <option value="biol">biologia</option>
+                    <option value="ang">angielski</option>
+                    <option value="fiz">fizyka</option>
+                </optgroup>
+            </select>
+            <div class="a">
+                <button type="reset" value="Szukaj" onclick="window.open('../korepetytorzy/korepetytorzyWyniki.html','_self')"  class="szukaj">Szukaj <img src="img/korepetytorzy_arrow.svg" alt=""></button>
+        </div>
+        </form>
+    </main>
+    <footer class="footer">
+            <a href="#"><img src="../ikony_svg/people_active.svg" alt="Ludzie Ikona"></a>
+            <a href="../korepetytorzy/korepetycjeDodaj.html"><img src="../ikony_svg/add.svg" alt="Dodaj Ikona"></a>
+            <a href="../strona_glowna/strona_glowna.html"><img src="../ikony_svg/home.svg" alt="Strona Glowna Ikona"></a>
+            <a href="../kalendarz/kalendarz.html"><img src="../ikony_svg/calendar.svg" alt="Kalendarz Ikona"></a>
+            <a href="../profil/profil.html"><img src="../ikony_svg/profil.svg" alt="Profil Ikona"></a> 
+    </footer>
+    <div class="footer-space"></div>
+</body>
+</html>

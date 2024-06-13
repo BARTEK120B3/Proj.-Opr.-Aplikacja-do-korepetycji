@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notatki</title>
+    <link rel="stylesheet" href="notatki.css" />
+    <link rel="stylesheet" href="../footer.css" />
+    <script src="notatka.js" defer></script>
+    <script src="form.js" defer></script>
+    <link rel="shortcut icon" href="../zsti_logo.svg" type="image/x-icon">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <b>Notatki</b>
+        <a href="../profil/profil.html" class="backArrow">
+          <img src="svg/undo.svg" alt="Back" class="szczala" />
+        </a>
+      </header>
+      <main>
+        <div class="articles">
+          <article class="note">
+            <h3>Notatka</h3>
+            <p style="padding-top: 3%">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit
+              assumenda nostrum autem vitae doloremque totam officia quasi sequi
+              soluta rerum debitis illo eligendi, ab culpa labore ex beatae nemo
+              voluptatum alias, incidunt quod dolore vero animi? Aut voluptates
+              voluptate eveniet quis vel. Ex et a quo voluptates dolores enim
+              numquam.
+            </p>
+          </article>
+          <article class="note">
+            <h3>Notatka</h3>
+            <p style="padding-top: 3%">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit
+              assumenda nostrum autem vitae doloremque totam officia quasi sequi
+              soluta rerum debitis illo eligendi, ab culpa labore ex beatae nemo
+              voluptatum alias, incidunt quod dolore vero animi? Aut voluptates
+              voluptate eveniet quis vel. Ex et a quo voluptates dolores enim
+              numquam.
+            </p>
+          </article>
+          <article class="note">
+            <h3>Notatka</h3>
+            <p style="padding-top: 3%">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit
+              assumenda nostrum autem vitae doloremque totam officia quasi sequi
+              soluta rerum debitis illo eligendi, ab culpa labore ex beatae nemo
+              voluptatum alias, incidunt quod dolore vero animi? Aut voluptates
+              voluptate eveniet quis vel. Ex et a quo voluptates dolores enim
+              numquam.
+            </p>
+          </article>
+        </div>
+        <div class="formDiv">
+          <h1>Dodaj notatkę</h1>
+          <form action="#">
+            <label for="title"></label>
+            <input
+              type="text"
+              name="title"
+              id="title"
+              required
+              placeholder="Tytuł"
+            />
+            <label for="subject"></label>
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              placeholder="Przedmiot"
+              required
+            />
+            <label for="text"></label>
+            <textarea
+              name="text"
+              id="text"
+              cols="30"
+              rows="10"
+              placeholder="Treść"
+              style="resize: none;"
+              required
+            ></textarea>
+            <button type="submit" class="addBtn">
+              <img src="svg/undo-1.svg" alt="Submit" />
+            </button>
+          </form>
+        </div>
+        <a href="dodajNotatki.html" class="addBtn" id="addFormBtn">
+          <img src="svg/undo-1.svg" alt="Add" />
+        </a>
+      </main>
+      <footer class="footer">
+            <a href="../korepetytorzy/korepetytorzySzukanie.html"><img src="../ikony_svg/people.svg" alt="Ludzie Ikona"></a>
+            <a href="../korepetytorzy/korepetycjeDodaj.html"><img src="../ikony_svg/add.svg" alt="Dodaj Ikona"></a>
+            <a href="../strona_glowna/strona_glowna.html"><img src="../ikony_svg/home.svg" alt="Strona Glowna Ikona"></a>
+            <a href="../kalendarz/kalendarz.html"><img src="../ikony_svg/calendar.svg" alt="Kalendarz Ikona"></a>
+            <a href="../profil/profil.html"><img src="../ikony_svg/profil_active.svg" alt="Profil Ikona"></a> 
+    </footer>
+    <div class="footer-space"></div>
+    </div>
+  </body>
+</html>

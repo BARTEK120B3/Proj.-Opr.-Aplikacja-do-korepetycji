@@ -1,0 +1,172 @@
+html{
+    background-color: #FAFAFA;
+}
+body{
+    margin: 0;
+}
+@font-face {
+    font-family: Inter;
+    src: url('inter.ttf');
+}
+h1{
+    font-family: Inter;
+    color: #012676;
+    font-weight: 900;
+    padding: 1vw 0 0 8%;
+    font-size: 8vw;
+}
+.pp{
+    -webkit-mask-image: url(image_mask.png);
+    mask-image: url(image_mask.png);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat; 
+    mask-size: 100%;
+    width: 60%;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container header{
+    width: 100%;
+    /* position: sticky;
+  top: 0;
+  z-index: 100; */
+  background-color:#FAFAFA;
+}
+main{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-top: 10%; */
+}
+.profile_picture{
+    text-align: center;
+}
+.contact{
+    margin-top: 10%;
+    width: 95%;
+    margin-left: 5%;
+    font-family: Inter;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+strong{
+    font-weight: 600;
+}
+p{
+    margin: 0;
+}
+.activities{
+    margin-top: 10%;
+    margin-left: 5%;
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+.activities div{
+    flex-basis: 40%;
+    background-color: #012676;
+    padding: 2%;
+    color: #e5e7eb;
+    border-radius: 0.3em;
+    font-family: Inter;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Inter;
+}
+.svg{
+    width: 15%;
+}
+.activities > div > a{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+}
+#logout{
+    background-color: #df0000;
+}
+#description{
+    color: #FFF;
+    background-color: #D4D4D8;
+    width: 100%;
+    padding: 3%;
+    font-family: Inter;
+    font-weight: 600;
+    border-radius: .5em;
+    height: 10em;
+}
+.description{
+    width: 70%;
+    margin-top: 10%;
+}
+.star{
+    width: 13.3%;
+    margin: 10% 2.5% 0 2.5%;
+}
+.stars{
+    display: flex;
+    justify-content: center;
+}
+.stars div{
+    width: 50%
+}
+@media (min-width: 700px){
+    .stars{
+        width: 60%;
+    }
+}
+@media (min-width: 880px){
+    h1 {
+        font-size: 5vw;
+    }
+    main{
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: 20% 10% 10% 50%;
+        grid-template-areas: 
+        'act pp'
+        'act str'
+        'act con'
+        'desc desc';
+        padding-right: 5%;
+        margin-top: 2%;
+        width: 95%;
+    }
+    .activities{
+        grid-area: act;
+    }
+    .profile_picture{
+        grid-area: pp;
+    }
+    .stars{
+        grid-area: str;
+        width: 100%;
+    }
+    .stars div{
+        width: 100%;
+    }
+    .contact{
+        grid-area: con;
+        font-size: 90%;
+    }
+    .description{
+        grid-area: desc;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10%;
+    }
+    #description{
+        width: 60%;
+    }
+}

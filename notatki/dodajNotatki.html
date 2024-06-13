@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dodaj notatke</title>
+    <link rel="stylesheet" href="notatki.css">
+    <link rel="stylesheet" href="../footer.css">
+    <link rel="shortcut icon" href="../zsti_logo.svg" type="image/x-icon">
+    <style>
+        @media (min-width: 1000px){
+            form{
+                margin: 0% 20% 0% 20%;
+                padding: 3%;
+                width: auto;
+            }
+            
+        }
+        h2{
+            text-align: center;
+            margin-bottom: 5%;
+        }
+    </style>
+    <script src="form.js" defer></script>
+</head>
+<body>
+    <header>
+        <b>Notatki</b>
+        <a href="notatki.html" class="backArrow"><img src="svg/undo.svg" alt="backArrow" class="szczala"></a>
+    </header>
+    <main>
+        <h2>Dodaj notatke</h2>
+        <form action="#">
+            <label for="title"></label>
+            <input type="text" name="title" id="title" required placeholder="tytuł">
+            <label for="subject"></label>
+            <input type="text" name="subject" id="subject" placeholder="przedmiot" required>
+            <label for="text"></label>
+            <textarea name="text" id="text" cols="30" rows="10" placeholder="treść" required></textarea>
+            <button type="submit" class="addBtn"><img src="svg/undo-1.svg" alt=""></button>
+        </form>
+    </main>
+    <footer class="footer">
+            <a href="../korepetytorzy/korepetytorzySzukanie.html"><img src="../ikony_svg/people.svg" alt="Ludzie Ikona"></a>
+            <a href="../korepetytorzy/korepetycjeDodaj.html"><img src="../ikony_svg/add.svg" alt="Dodaj Ikona"></a>
+            <a href="../strona_glowna/strona_glowna.html"><img src="../ikony_svg/home.svg" alt="Strona Glowna Ikona"></a>
+            <a href="../kalendarz/kalendarz.html"><img src="../ikony_svg/calendar.svg" alt="Kalendarz Ikona"></a>
+            <a href="../profil/profil.html"><img src="../ikony_svg/profil_active.svg" alt="Profil Ikona"></a> 
+    </footer>
+    <div class="footer-space"></div>
+</body>
+</html>
